@@ -1,0 +1,147 @@
+
+.page-header {
+    width: 100%;
+    background: #ffffff;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    /* padding: 0 20px; */
+    box-sizing: border-box;
+    border-bottom: 1px solid #e5e7eb;
+}
+.layout-content {
+    padding-top: 47px;
+}
+.ph-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 12px 20px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.ph-navigation {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.ph-back,
+.ph-home {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    border: none;
+    background: transparent;
+    color: #0087cd;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 6px 4px;
+    transition: color 0.2s ease;
+}
+
+.ph-back:hover,
+.ph-home:hover {
+    color: #00933f;
+    font-weight: 700;
+}
+
+.ph-back i,
+.ph-home i {
+    font-size: 13px;
+}
+
+.ph-separator {
+    color: #d1d5db;
+}
+
+.ph-breadcrumbs {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 9px;
+    font-size: 12px;
+    color: #888;
+}
+
+.ph-breadcrumb-item {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.ph-breadcrumb-link {
+    border: none;
+    background: transparent;
+    color: #0087cd;
+    font-size: 13px;
+    cursor: pointer;
+    padding: 0;
+    transition: color 0.2s ease;
+}
+
+.ph-breadcrumb-link:hover {
+    color: #0087cd;
+    font-weight: 700;
+}
+
+.ph-chevron {
+    font-size: 9px;
+    color: #b5b5b5;
+}
+
+.ph-current {
+    color: #00933f;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+/* .ph-title-container {
+    padding: 17px 0 5px;
+} */
+
+.ph-title {
+    margin: 0;
+    color: #333333;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .ph-top {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .ph-breadcrumbs {
+        width: 100%;
+    }
+
+    .ph-title {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ph-navigation {
+        gap: 8px;
+    }
+
+    .ph-back,
+    .ph-home {
+        font-size: 12px;
+    }
+
+    .ph-breadcrumbs {
+        font-size: 11px;
+        gap: 6px;
+    }
+
+    .ph-breadcrumb-item {
+        gap: 6px;
+    }
+}

@@ -1,0 +1,79 @@
+.usuarios-tabla-contenedor {
+    width: 100%;
+    overflow-x: auto;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #e5e5e5;
+}
+
+.usuarios-tabla {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 950px;
+}
+
+.usuarios-tabla th,
+.usuarios-tabla td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    font-size: 13px;
+}
+
+.usuarios-tabla th {
+    background: #f7f9f8;
+    color: #444;
+    font-weight: 600;
+}
+
+.usuarios-tabla td strong {
+    display: block;
+    color: #333;
+}
+
+.usuarios-tabla td small {
+    display: block;
+    margin-top: 4px;
+    color: #888;
+}
+
+.usuarios-roles-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.usuarios-roles-lista span,
+.detalle-usuario-roles span {
+    background: #e5f4eb;
+    color: #16813e;
+    padding: 5px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+}
+
+.usuarios-acciones {
+    display: flex;
+    gap: 8px;
+}
+
+.usuarios-acciones button {
+    border: none;
+    background: #f1f3f4;
+    color: #555;
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.usuarios-acciones button:hover {
+    background: #e0f4e8;
+    color: #00933f;
+}
+
+.usuarios-sin-registros {
+    text-align: center !important;
+    padding: 30px !important;
+    color: #888;
+}

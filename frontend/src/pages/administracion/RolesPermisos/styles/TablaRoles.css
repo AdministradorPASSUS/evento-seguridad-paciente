@@ -1,0 +1,110 @@
+
+.roles-tabla-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.roles-tabla {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 13px;
+}
+
+.roles-tabla thead {
+    background-color: #f5f7f8;
+}
+
+.roles-tabla th {
+    padding: 15px 12px;
+    color: #52616b;
+    font-weight: 600;
+    white-space: nowrap;
+    border-bottom: 1px solid #e5e9ed;
+}
+
+.roles-tabla td {
+    padding: 15px 12px;
+    color: #56636b;
+    border-bottom: 1px solid #edf0f2;
+    vertical-align: middle;
+}
+
+.roles-tabla tbody tr:hover {
+    background-color: #f9fbfa;
+}
+
+.roles-tabla-name {
+    color: #263238;
+    font-weight: 600;
+}
+
+.roles-tabla-count {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 32px;
+    padding: 5px 10px;
+    background-color: #e8f5ec;
+    color: #00883c;
+    border-radius: 15px;
+    font-weight: 600;
+}
+
+.roles-tabla-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 9px 12px;
+    background-color: #00933f;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.2s ease;
+}
+
+.roles-tabla-btn:hover {
+    background-color: #007a34;
+}
+
+.roles-tabla-btn:active {
+    transform: scale(0.98);
+}
+
+.roles-tabla-loading,
+.roles-tabla-empty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 180px;
+    color: #78858c;
+    font-size: 14px;
+}
+
+.roles-tabla-spinner {
+    width: 32px;
+    height: 32px;
+    border: 3px solid #e5e9ed;
+    border-top-color: #00933f;
+    border-radius: 50%;
+    animation: rolesSpinner 0.8s linear infinite;
+    margin-bottom: 12px;
+}
+
+@keyframes rolesSpinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .roles-tabla {
+        min-width: 750px;
+    }
+}

@@ -1,0 +1,80 @@
+
+.roles-permisos-container {
+    width: 100%;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.roles-permisos-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.roles-permisos-header h1 {
+    margin: 0 0 8px;
+    color: #263238;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.roles-permisos-header p {
+    margin: 0;
+    color: #68757d;
+    font-size: 14px;
+}
+
+.roles-permisos-content {
+    width: 100%;
+    padding: 22px;
+    background-color: #ffffff;
+    border: 1px solid #e5e9ed;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.roles-permisos-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 22px;
+}
+
+.roles-permisos-section-header h2 {
+    margin: 0 0 6px;
+    color: #263238;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.roles-permisos-section-header p {
+    margin: 0;
+    color: #7a858c;
+    font-size: 13px;
+}
+
+.roles-permisos-total {
+    padding: 7px 13px;
+    background-color: #e8f5ec;
+    color: #00883c;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .roles-permisos-container {
+        padding: 15px;
+    }
+
+    .roles-permisos-content {
+        padding: 15px;
+    }
+
+    .roles-permisos-section-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}

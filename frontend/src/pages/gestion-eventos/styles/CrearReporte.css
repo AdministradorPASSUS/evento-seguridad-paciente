@@ -1,0 +1,173 @@
+/* Contenedor principal del formulario */
+.crear-reporte-container {
+  padding: 40px;
+  max-width: 800px;
+  width: 100%;
+  margin: 50px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 14px #00933f, 0 4px 10px #0000000d;
+}
+
+/* Encabezados y textos */
+.crear-reporte-title {
+  color: #0087cd;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+.crear-reporte-subtitle {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+/* Estructura del formulario */
+.crear-reporte-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Grillas para organizar campos */
+.crear-reporte-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 15px;
+}
+
+.crear-reporte-grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+}
+
+.crear-reporte-grid-equal-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  align-items: center;
+}
+ .file {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  align-items: center;
+}
+
+/* Grupos de campos y etiquetas */
+.crear-reporte-field-group {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.crear-reporte-label {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Inputs, Selects y Textareas (aprovecha register-field-input si ya existe, o usa estilos base) */
+.crear-reporte-input,
+.crear-reporte-textarea,
+.crear-reporte-select {
+  /* Si ya tienes clases globales con .register-field-input, puedes omitir esto */
+  font-size: 13px;
+  padding: 8px 10px;
+}
+
+.crear-reporte-file {
+  font-size: 13px;
+}
+
+/* Botones de acción */
+.crear-reporte-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.crear-reporte-btn-submit {
+  flex: 1;
+  background-color: #00933f;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.crear-reporte-btn-submit:hover {
+  background-color: #007b34;
+}
+
+.crear-reporte-btn-cancel {
+  background-color: #ccc;
+  color: #333;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.crear-reporte-btn-cancel:hover {
+  background-color: #b3b3b3;
+}
+
+.evidencias-lista {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.evidencia-item {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  width: 195px;
+  min-width: 0;
+  padding: 6px;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.evidencia-icono {
+  font-size: 15px;
+  flex-shrink: 0;
+}
+
+.evidencia-nombre {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  color: #374151;
+}
+
+.evidencia-eliminar {
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  border: none;
+  border-radius: 50%;
+  background: #fee2e2;
+  color: #dc2626;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.evidencia-eliminar:hover {
+  background: #dc2626;
+  color: #ffffff;
+}

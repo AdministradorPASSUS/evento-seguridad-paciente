@@ -1,0 +1,131 @@
+/* src/styles/Register.css */
+
+/* Contenedor principal que centra la tarjeta en la pantalla */
+.register-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Tarjeta contenedora blanca */
+.register-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 580px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+/* Cabecera con el logo */
+.register-header {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.register-logo-img {
+  max-width: 250px;
+  height: auto;
+}
+
+.register-title {
+  color: #333333;
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Formulario con scroll automático si la pantalla es muy pequeña */
+.register-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 75vh;
+  overflow-y: auto;
+  padding-right: 5px;
+  box-sizing: border-box;
+}
+
+/* Filas organizadas en 2 columnas */
+.register-grid-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+/* Estilos de los Inputs y Selects */
+.register-field-input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.register-field-input:focus {
+  border-color: #00933f;
+  box-shadow: 0 0 0 3px rgba(0, 147, 63, 0.15);
+}
+
+.register-select-input {
+  cursor: pointer;
+}
+
+/* Botón de envío verde */
+.register-btn-submit {
+  background-color: #00933f;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s;
+}
+
+.register-btn-submit:hover {
+  background-color: #007a33;
+}
+
+/* Texto de navegación al Login */
+.register-footer-info {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+  color: #555555;
+}
+
+.register-link-login {
+  color: #00933f;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.register-link-login:hover {
+  text-decoration: underline;
+}
+
+/* Responsivo para celulares (pasa a 1 sola columna) */
+@media (max-width: 500px) {
+  .register-grid-row {
+    grid-template-columns: 1fr;
+  }
+}

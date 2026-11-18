@@ -1,0 +1,272 @@
+
+.mp-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.mp-modal {
+    width: 100%;
+    max-width: 1150px;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+}
+
+.mp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 25px;
+    border-bottom: 1px solid #e8ecef;
+}
+
+.mp-header h2 {
+    margin: 0 0 7px;
+    color: #263238;
+    font-size: 21px;
+}
+
+.mp-header p {
+    margin: 0;
+    color: #68757d;
+    font-size: 13px;
+}
+
+.mp-header strong {
+    color: #00933f;
+}
+
+.mp-close {
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 50%;
+    background: #f1f3f4;
+    color: #53616a;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.mp-close:hover {
+    background: #e4e8ea;
+}
+
+.mp-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 25px;
+    background: #f7faf8;
+}
+
+.mp-info strong {
+    color: #00933f;
+    font-size: 20px;
+}
+
+.mp-info span {
+    color: #53616a;
+    font-size: 13px;
+}
+
+.mp-info p {
+    margin: 0;
+    color: #78858c;
+    font-size: 12px;
+}
+
+.mp-admin-warning {
+    margin: 15px 25px 0;
+    padding: 12px 15px;
+    background: #fff8e8;
+    border-left: 4px solid #e6a23c;
+    border-radius: 5px;
+}
+
+.mp-admin-warning strong {
+    color: #9a6500;
+    font-size: 13px;
+}
+
+.mp-admin-warning p {
+    margin: 5px 0 0;
+    color: #795b25;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.mp-table-container {
+    width: 100%;
+    padding: 20px 25px;
+    overflow: auto;
+}
+
+.mp-table {
+    width: 100%;
+    min-width: 850px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.mp-table th {
+    padding: 13px 9px;
+    background: #f2f5f6;
+    color: #53616a;
+    font-size: 12px;
+    font-weight: 600;
+    border-bottom: 1px solid #e2e7e9;
+}
+
+.mp-table th:first-child {
+    min-width: 190px;
+    text-align: left;
+}
+
+.mp-table td {
+    padding: 15px 8px;
+    border-bottom: 1px solid #edf0f2;
+}
+
+.mp-table tbody tr:hover {
+    background: #f9fbfa;
+}
+
+.mp-module {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #34434b;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: left;
+}
+
+.mp-module input,
+.mp-checkbox {
+    width: 17px;
+    height: 17px;
+    accent-color: #00933f;
+    cursor: pointer;
+}
+
+.mp-module input:disabled {
+    cursor: not-allowed;
+    opacity: 0.4;
+}
+
+.mp-checkbox {
+    vertical-align: middle;
+}
+
+.mp-not-available {
+    color: #c5cdd1;
+    font-size: 16px;
+}
+
+.mp-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 18px 25px;
+    border-top: 1px solid #e8ecef;
+    background: #ffffff;
+}
+
+.mp-footer button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.mp-btn-cancel {
+    background: #edf0f2;
+    color: #53616a;
+}
+
+.mp-btn-cancel:hover {
+    background: #dfe4e7;
+}
+
+.mp-btn-save {
+    background: #00933f;
+    color: #ffffff;
+}
+
+.mp-btn-save:hover {
+    background: #007a34;
+}
+
+.mp-footer button:disabled,
+.mp-close:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.mp-loading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px;
+    color: #68757d;
+    font-size: 14px;
+}
+
+.mp-spinner {
+    width: 35px;
+    height: 35px;
+    border: 3px solid #e5e9ed;
+    border-top-color: #00933f;
+    border-radius: 50%;
+    animation: mpSpin 0.8s linear infinite;
+}
+
+@keyframes mpSpin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .mp-overlay {
+        padding: 8px;
+    }
+
+    .mp-modal {
+        max-height: 95vh;
+    }
+
+    .mp-header {
+        padding: 17px;
+    }
+
+    .mp-info {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 15px 17px;
+    }
+
+    .mp-table-container {
+        padding: 15px;
+    }
+
+    .mp-footer {
+        padding: 15px;
+    }
+}

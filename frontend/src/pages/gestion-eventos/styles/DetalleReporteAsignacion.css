@@ -1,0 +1,92 @@
+
+/* =========================================
+   INFORMACIÓN GENERAL DEL REPORTE
+========================================= */
+
+.detalle-reporte-general {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.detalle-reporte-grid-spacing {
+    margin-top: 15px;
+}
+
+.detalle-reporte-field-spacing {
+    margin-top: 15px;
+}
+
+/* =========================================
+   SECCIÓN DE ASIGNACIÓN
+========================================= */
+
+.detalle-reporte-asignacion {
+    margin-top: 20px;
+}
+
+.detalle-reporte-asignacion-title {
+    font-size: 15px;
+    color: #0f2d59;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.detalle-reporte-status-container {
+    margin-top: 8px;
+}
+
+.detalle-reporte-selector {
+    margin-top: 15px;
+}
+
+/* =========================================
+   BOTÓN GUARDAR ASIGNACIÓN
+========================================= */
+
+.detalle-reporte-save-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.detalle-reporte-btn-save {
+    background-color: #00933f;
+    color: #ffffff;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition:
+        background-color 0.25s ease,
+        transform 0.2s ease,
+        box-shadow 0.25s ease;
+}
+
+.detalle-reporte-btn-save:hover:not(:disabled) {
+    background-color: #007a34;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 147, 63, 0.25);
+}
+
+.detalle-reporte-btn-save:active:not(:disabled) {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.detalle-reporte-btn-save:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* =========================================
+   BOTÓN REGRESAR
+========================================= */
+
+.detalle-reporte-actions {
+    margin-top: 35px;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 20px;
+}

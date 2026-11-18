@@ -1,0 +1,72 @@
+.detalle-usuario-modal {
+    max-width: 700px;
+}
+
+.detalle-usuario-perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0 25px;
+    border-bottom: 1px solid #eee;
+}
+
+.detalle-usuario-avatar {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: #e5f4eb;
+    color: #00933f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.detalle-usuario-perfil h3 {
+    margin: 0;
+    color: #333;
+}
+
+.detalle-usuario-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 25px 0;
+}
+
+.detalle-usuario-grid label {
+    display: block;
+    color: #888;
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+.detalle-usuario-grid p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+    overflow-wrap: anywhere;
+}
+
+.detalle-usuario-roles {
+    border-top: 1px solid #eee;
+    padding-top: 18px;
+}
+
+.detalle-usuario-roles h4 {
+    margin: 0 0 12px;
+    color: #333;
+}
+
+.detalle-usuario-roles > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+@media (max-width: 600px) {
+    .detalle-usuario-grid {
+        grid-template-columns: 1fr;
+    }
+}

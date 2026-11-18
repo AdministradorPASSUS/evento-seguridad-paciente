@@ -1,0 +1,44 @@
+.modal-estado-usuario {
+    max-width: 420px;
+    text-align: center;
+    padding: 30px;
+}
+
+.modal-estado-icono {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.modal-estado-icono.desactivar {
+    background: #fde8e8;
+    color: #dc3545;
+}
+
+.modal-estado-icono.activar {
+    background: #e0f4e8;
+    color: #00933f;
+}
+
+.modal-estado-usuario h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.modal-estado-usuario p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.modal-estado-acciones {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 25px;
+}

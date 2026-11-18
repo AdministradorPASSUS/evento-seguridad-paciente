@@ -1,0 +1,88 @@
+.formulario-usuario-modal {
+    max-width: 850px;
+}
+
+.formulario-usuario-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.formulario-campo {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.formulario-campo label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #444;
+}
+
+.formulario-campo input,
+.formulario-campo select {
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    font-size: 13px;
+}
+
+.formulario-campo input:focus,
+.formulario-campo select:focus {
+    border-color: #00933f;
+}
+
+.formulario-roles {
+    margin-top: 25px;
+    border-top: 1px solid #eee;
+    padding-top: 18px;
+}
+
+.formulario-roles h4 {
+    margin: 0 0 6px;
+    color: #333;
+}
+
+.formulario-roles p {
+    font-size: 13px;
+    color: #777;
+}
+
+.formulario-roles-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.formulario-rol-item {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 10px;
+    background: #f7f9f8;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.formulario-rol-item input {
+    accent-color: #00933f;
+}
+
+.campo-obligatorio {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+
+    .formulario-usuario-grid,
+    .formulario-roles-grid {
+        grid-template-columns: 1fr;
+    }
+}
+

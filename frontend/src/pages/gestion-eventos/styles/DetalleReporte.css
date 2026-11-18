@@ -1,0 +1,252 @@
+/* Contenedor principal del detalle */
+.detalle-reporte-container {
+  box-sizing: border-box;
+  padding: 40px;
+  width: 87%;
+  min-width: 320px;
+  margin: 50px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 14px #00933f, 0 4px 10px #0000000d;
+}
+
+/* Encabezados */
+.detalle-reporte-title {
+  color: #0087cd;
+  margin-bottom: 10px;
+}
+
+.detalle-reporte-subtitle {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+/* Estructura general del formulario/detalle */
+.detalle-reporte-form-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Tarjeta superior de información general (Estado, Código, Fecha) */
+.detalle-reporte-info-box {
+  display: flex;
+  justify-content: space-between;
+  background: #f4f6f8;
+  padding: 15px;
+  border-radius: 8px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.detalle-reporte-info-item span {
+  font-size: 12px;
+  color: #666;
+  display: block;
+}
+
+.detalle-reporte-info-item strong {
+  font-size: 15px;
+}
+
+.detalle-reporte-status {
+  color: #00933f;
+}
+
+/* Enlaces y textos de evidencia */
+.detalle-reporte-file-link {
+  color: #0087cd;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: underline;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+.detalle-reporte-file-link:hover {
+  color: #006da3;
+}
+
+.detalle-reporte-no-file {
+  font-size: 13px;
+  color: #888;
+  font-style: italic;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+/* Botón de Regresar */
+.detalle-reporte-actions {
+  display: flex;
+  margin-top: 15px;
+}
+
+.detalle-reporte-btn-back {
+  background-color: #0087cd;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s ease;
+}
+
+.detalle-reporte-btn-back:hover {
+  background-color: #006da3;
+}
+
+/* Estado de carga inicial */
+.detalle-reporte-loading {
+  text-align: center;
+  padding: 50px;
+  font-size: 16px;
+  color: #666;
+}
+
+.detalle-reporte-evidencias {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 3px;
+  margin-top: 10px;
+}
+
+.detalle-reporte-file-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0px;
+  padding: 6px;
+  background-color: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 8px;
+  color: #15803d;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.detalle-reporte-file-link:hover {
+  background-color: #dcfce7;
+}
+
+/* Contenedor principal de responsables */
+.responsables-asignados {
+  margin-top: 15px;
+}
+
+/* Lista de responsables */
+.responsables-lista {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+/* Tarjeta individual de cada responsable */
+.responsable-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #f8fafc;
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid #cbd5e1;
+  font-size: 13px;
+  color: #334155;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.responsable-item:hover {
+  background-color: #f1f5f9;
+  border-color: #94a3b8;
+}
+
+/* Círculo con iniciales */
+.responsable-iniciales {
+  background-color: #0284c7;
+  color: #ffffff;
+  width: 26px;
+  height: 26px;
+  min-width: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+/* Nombre del responsable */
+.responsable-nombre {
+  font-weight: 500;
+  overflow-wrap: anywhere;
+}
+
+/* Mensaje cuando no hay responsables */
+.responsables-vacio {
+  font-size: 14px;
+  color: #64748b;
+  font-style: italic;
+  padding: 6px 0;
+  display: block;
+}
+
+/* Contenedor del botón de regresar */
+.detalle-reporte-actions {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 30px;
+}
+
+/* Botón de regresar */
+.detalle-reporte-btn-back {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #0284c7;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.detalle-reporte-btn-back:hover {
+  background-color: #0369a1;
+  transform: translateY(-1px);
+}
+
+.detalle-reporte-btn-back:active {
+  transform: translateY(0);
+}
+
+.detalle-reporte-btn-back:focus-visible {
+  outline: 3px solid #7dd3fc;
+  outline-offset: 3px;
+}
+
+/* Adaptación para dispositivos móviles */
+@media (max-width: 600px) {
+  .responsables-lista {
+    gap: 8px;
+  }
+
+  .responsable-item {
+    max-width: 100%;
+  }
+
+  .detalle-reporte-actions {
+    width: 100%;
+  }
+
+  .detalle-reporte-btn-back {
+    width: 100%;
+  }
+}
